@@ -1,0 +1,81 @@
+
+
+file1.java => (javac) => bytecode / classfile => (JRE) => Native Machine Language 
+Browser = HTML Renderer + CSS Parser + JS Engine 
+
+JavaScript
+---
+
+
+ECMAScript 
+--
+  * standard 
+  * grammar 
+  * implementation
+      JavaScript, JScript, ActionScript, QtScript
+
+  ECMAScript Till 2015
+  ---
+    * Not Object Oriented 
+
+  ECMAScript From June 2015 
+  --
+    * Object Oriented Language
+    * many features 
+
+
+Browsers:
+---
+  IE, Mozilla Firefox, Apple Safari, Opera
+
+Browsers Family 
+--
+  Browser Core = HTML Renderer + CSS Parser + JS Engine 
+  
+  Webkit Browser Core (Open Sourced)   => Safari 
+  Mozilla Browser Core (Open Sourced)  => Firefox
+  
+  Chromium Core (Open Sourced) = Webkit Core + Mozilla Core + Google Own Codebase (V8 JS Engine)  => Chrome 
+    
+  ---
+  V8 JS Engine (Open Sourced)
+  ---
+    * js code into machine lang before exec 
+
+  ---
+
+  NodeJS 
+  --
+    * uses v8 engine 
+    
+Front End 
+---
+  JS (Raw Js or Vanilla JS)
+
+Back End 
+---
+  Java, DotNet, PHP, Perl, Python, Ruby, NodeJS (JS)
+
+Database
+--
+  SQL, MongoDB (JS) 
+
+Mobile Apps
+---
+  Java, DotNet, Python, Ionic and React Native (JS)
+
+Desktop Apps
+--
+  Java, DotNet, Electron JS (JS) 
+
+--
+
+
+--------------------------
+file1.java => (javac)           => bytecode / classfile    => (JRE)                 => Machine Language
+file1.aspx => (dotnet compiler) => intermediate code (dll) => (Dotnet runtime Env ) => Machine Language
+                                   file1.js                => (NodeJS)              => Machine Language 
+--------------------------
+
+
+
