@@ -4,6 +4,8 @@ const dummyText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusc
 
 const buffer = new Buffer.from(dummyText, 'utf8'); // getting buffer out of string 'dummyText'
 
+console.log(Buffer.byteLength(buffer)); // to see the buffer byte length -- Buffer is from global
+
 console.log(buffer); // prints the content in buffer format
 console.log(buffer.toString()); // prints the content in string format
 console.log(buffer.toJSON()); // prints the content in JSON format
