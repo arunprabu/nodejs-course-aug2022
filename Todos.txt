@@ -1,0 +1,2 @@
+1. Try using res.write()
+2. Try sending .html files as res
