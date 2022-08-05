@@ -21,8 +21,9 @@ http.createServer( (req, res) => { // to handle req and process res
       </html>`);
       break;
 
-    case '/about': 
-      res.end(`<html>
+    case '/about':
+      res.writeHead(200, {'Content-Type': 'text/html'});
+      res.write(`<html>
         <head>
           <title>About</title>
         </head>
@@ -30,6 +31,7 @@ http.createServer( (req, res) => { // to handle req and process res
           <h1>Welcome to my About page</h1>
         </body>
       </html>`);
+      res.end();
       break;
   
     case '/contact': 
@@ -49,7 +51,7 @@ http.createServer( (req, res) => { // to handle req and process res
           <title>404</title>
         </head>
         <body>
-          <h1>404 - Page Not Found</h1>
+          <h1>404 - Page Not Found!</h1>
         </body>
       </html>`);
   }

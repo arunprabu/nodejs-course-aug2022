@@ -1,2 +1,6 @@
 1. Try using res.write()
 2. Try sending .html files as res
+3. TODO: Learn about npm prune command 
+4. Learn about where will the global Dependencies be installed in windows/mac... 
+    npm i nodemon -g 
+

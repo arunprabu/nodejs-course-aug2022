@@ -79,3 +79,50 @@ file1.aspx => (dotnet compiler) => intermediate code (dll) => (Dotnet runtime En
 
 
 
+NodeJS Ecosystem
+---
+  
+  fs 
+  http 
+  events 
+  npm (client tool)
+    install, update, uninstall
+
+  1. Package Developers 
+  2. Marketplace (npmjs.com  - host ) 
+  3. Web Developers 
+
+
+  Dependencies
+  --
+    1. Project Dependencies 
+        * some packages are needed for the functionality of the app to work 
+        * will be part of prod build 
+ 
+        npm i express (or)
+        npm i express --save (or) 
+        npm i express -S 
+
+    2. Development Dependencies
+        * some packages are needed for the project to be developed
+        * to have better, smoother dev workflow 
+        * will never be part of prod build 
+
+        npm i webpack --save-dev (or)
+        npm i webpack -D 
+        
+    3. Global Dependencies 
+        * will be accessible system wide 
+        npm i nodemon -g (or)
+        npm i nodemon --global 
+
+
+    Other commands 
+    --
+      npm update express 
+      npm uninstall express 
+      TODO: Learn about npm prune 
+
+--
+
+
