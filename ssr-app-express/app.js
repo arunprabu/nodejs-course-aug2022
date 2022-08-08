@@ -1,4 +1,4 @@
-const express = require('express');  // custom import of express
+const express = require('express');  // node_module import of express
 const app = express(); // Creates an Express application. 
 const port = 3000; // port number 
 
