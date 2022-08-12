@@ -1,0 +1,74 @@
+MongoDB in Windows 
+--
+
+Let's start the MongoDB Server 
+  C:/Program Files/MongoDB/Server/5.0/bin>mongod 
+
+  Keep this command prompt opened
+
+Launch MongoDB Client
+  C:/Program Files/MongoDB/Server/5.0/bin>mongo 
+
+MongoDB 5.0 in Mac 
+--
+If have mongodb 5 installed in Mac.
+
+> brew services start mongodb-community@5.0
+> mongo
+> brew services stop mongodb-community@5.0
+
+
+Database
+--
+  1. DB Server 
+      host / ip address: localhost
+      port number: 27017 
+      db credentials (username and password): 
+        
+  2. DB Client 
+      Shell Client
+      GUI Client (Robo 3T, MongoDB Compass)
+      Programming Client (Drivers)
+
+--
+
+
+DB Types
+--
+  RDBMS 
+  --
+    * Oracle, MySQL, PostgreSQL, MariaDB 
+    * Relational Database 
+    * Saved in Tables (Columns and Rows)
+    * interact using SQL 
+    * Schema based
+
+  NoSQL 
+  --
+    * MongoDB,  Amazon DynamoDB, Apache Ignite
+    * Not only SQL 
+    * Saved as Collections (Object (JSON))
+    * interact using JavaScript
+    * Schema-less 
+    * meant for unstructured data
+
+MongoDB Drivers
+---
+  1. Official MongoDB Driver (https://www.npmjs.com/package/mongodb)
+  2. Unofficial MongoDB Driver -Mongoose (https://www.npmjs.com/package/mongoose)
+
+Mongoose - Object Modeling Package
+---
+  * Offers Object modeling (schema)
+  * Object Document Mapping.(ODM)
+  * Driver 
+  * npm i mongoose 
+
+--
+
+
+
+
+MySQL using sequelize 
+
+Authentication
