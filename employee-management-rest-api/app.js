@@ -4,6 +4,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const passport = require('passport');
+const cors = require('cors');
+
+require('./models/account.model');
+// connecting passport config
+require('./config/passport.config');
 
 // custom imports
 var indexRouter = require('./routes/index');
@@ -11,6 +17,7 @@ var aboutRouter = require('./routes/about');
 var usersRouter = require('./routes/users');
 // importing rest api related routes
 var employeesRouter = require('./routes/api/employees');
+var authRouter = require('./routes/api/auth');
 
 // variables
 var app = express();
@@ -24,6 +31,10 @@ app.use(express.json()); //
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser()); 
 app.use(express.static(path.join(__dirname, 'public')));
+//setting up auth middleware
+app.use(passport.initialize());
+
+app.use(cors());
 
 app.use('/', indexRouter); // localhost:3000/
 app.use('/about', aboutRouter); // localhost:3000/about
@@ -31,6 +42,7 @@ app.use('/users', usersRouter);// localhost:3000/users
 
 // REST API - Endpoints
 app.use('/api/employees', employeesRouter);
+app.use('/api/auth', authRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

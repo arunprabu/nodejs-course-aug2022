@@ -67,8 +67,28 @@ Mongoose - Object Modeling Package
 --
 
 
+Authentication
+--
+Authentication
+--
+  1. Session Based Authentication
+      * session id will be  generated and saved in Server 
+        * session id would be sent to the browser
+          * browser should store it in cookies 
+            (post-login pages will be accessible thereafter -
+            provided the session id is sent thru  req header)
 
+  2. Token Based Authentication
+      * token (JWT) will be generated 
+        * token would be sent to the browser
+          * browser should store it in cookies / localstorage/session storage 
+          (post-login pages will be accessible thereafter -
+            provided the token is sent thru req header)
+
+---
+
+CORS  
 
 MySQL using sequelize 
-
-Authentication
+----
+Step 1: 

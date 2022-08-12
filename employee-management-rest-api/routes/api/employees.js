@@ -1,6 +1,7 @@
 var express = require('express');
 const { body } = require('express-validator');
 const { createEmployee, getEmployees, getEmployeeById, updateEmployee } = require('../../controllers/employees.controller');
+const auth = require('../../utils/auth');
 
 var router = express.Router();
 
@@ -21,10 +22,10 @@ router.post(
 );
 
 /* GET employees listing. /api/employees */
-router.get('/', getEmployees);
+router.get('/', auth.required, getEmployees);
 
 /* GET employee details. /api/employees/:id */
-router.get('/:id', getEmployeeById);
+router.get('/:id', auth.optional, getEmployeeById);
 
 router.put('/:id', updateEmployee);
 
